@@ -18,7 +18,10 @@ server.use(
 )
 
 server.get('*', async (req, res) => {
-  const { app } = await createApp()
+  const { app, router } = await createApp();
+  
+  await router.push(req.url);
+  await router.isReady();
 
   const appContent = await renderToString(app)
 

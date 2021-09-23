@@ -1,10 +1,12 @@
-import createApp from './app'
+import createApp from "./app";
 
 // client-specific bootstrapping logic...
 
-const { app } = createApp({
+const { app, router } = createApp({
   // here we can pass additional arguments to app factory
-})
+});
 
-// this assumes App.vue template root element has `id="app"`
-app.mount('#app')
+router.isReady().then(() => {
+  // this assumes App.vue template root element has `id="app"`
+  app.mount("#app");
+});

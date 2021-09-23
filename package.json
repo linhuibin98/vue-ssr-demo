@@ -14,7 +14,8 @@
   "dependencies": {
     "@vue/server-renderer": "^3.2.12",
     "express": "^4.17.1",
-    "vue": "^3.2.12"
+    "vue": "^3.2.12",
+    "vue-router": "^4.0.11"
   },
   "devDependencies": {
     "@vue/cli-service": "^5.0.0-beta.4",

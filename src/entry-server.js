@@ -1,11 +1,12 @@
 import createApp from './app'
 
 export default function() {
-  const { app } = createApp({
+  const { app, router } = createApp({
     /*...*/
   })
 
   return {
-    app
+    app,
+    router
   }
 }
